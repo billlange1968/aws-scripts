@@ -37,7 +37,7 @@ function Get-Database-Deadlock {
   $endTimeMS = $startTimeDT.AddMinutes(30)
 
   $startTimeDT = Convert-DateTime-To-Milliseconds $startTimeDT
-  $endTimeDT = Convert-DateTime-To-Milliseconds $endTImeDT
+  $endTimeDT = Convert-DateTime-To-Milliseconds $endTimeDT
 
   Write-Host = aws logs get-log-events --log-group-name $logGroupName --log-stream-name $logStreamName --start-time $startTimeMS --end-time $endTimeMS --output json | ConvertFrom-Json
 
