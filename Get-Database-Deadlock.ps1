@@ -70,9 +70,9 @@ function Convert-DateTime-To-Milliseconds {
   $milliseconds = [math]::Round(($datetime - $epoch).TotalMilliseconds)
 
   return $milliseconds
-  }
+}
 
-  # Example usage
-  $dbInstanceId = "############"
-  #$startTime = "2025-02-23 03:00:00.00"
-  #Get-Database-Deadlock -dbInstanceId $dbInstanceId -startTime $startTime
+# Example usage
+$dbInstanceId = "############"
+#$startTime = "2025-02-23 03:00:00.00"
+#Get-Database-Deadlock -dbInstanceId $dbInstanceId -startTime $startTime
